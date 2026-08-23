@@ -1,0 +1,11 @@
+node_modules/
+frontend/node_modules/
+frontend/dist/
+backend/.venv/
+__pycache__/
+.DS_Store
+
+# Ignore API keys and config files
+.env
+.env.example
+config.js
