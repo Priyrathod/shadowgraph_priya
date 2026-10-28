@@ -2659,3 +2659,232 @@ def export_report_pdf(current_user: User = Depends(get_current_user), db: Sessio
         media_type='application/pdf',
         headers={'Content-Disposition': f'attachment; filename=\"{filename}\"'},
     )
+
+
+# ==============================================================================
+# Cyber Intelligence & Attack Surface Analysis Endpoints (Real Data, No DB)
+# ==============================================================================
+
+from app.cyber_intel import (
+    validate_target,
+    gather_dns_records,
+    gather_rdap_info,
+    gather_ip_intel,
+    gather_certificates,
+    gather_subdomains,
+    check_threat_intelligence,
+    evaluate_security_findings,
+    build_interactive_graph,
+)
+from app.local_storage import (
+    save_scan_result,
+    get_scan_result,
+    list_scan_results,
+    delete_scan_result,
+    generate_pdf_report as generate_cyber_pdf_report,
+)
+
+
+class AnalyzeDomainIpRequest(BaseModel):
+    target: str = Field(..., min_length=2, max_length=255)
+    timeout_seconds: float = Field(default=12.0, ge=3.0, le=30.0)
+
+
+def get_optional_user(request: Request, db: Session = Depends(get_db)) -> User | None:
+    auth_header = request.headers.get('Authorization')
+    if not auth_header or not auth_header.startswith('Bearer '):
+        return None
+    token = auth_header.split(' ', 1)[1]
+    try:
+        return require_user(db, token)
+    except Exception:
+        return None
+
+
+@app.post('/api/analyze/domain-ip')
+async def analyze_domain_ip(
+    req: AnalyzeDomainIpRequest,
+    request: Request,
+    user: User | None = Depends(get_optional_user),
+    db: Session = Depends(get_db),
+) -> dict[str, Any]:
+    # 1. Validate Target & Prevent SSRF
+    try:
+        target_info = validate_target(req.target)
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+    target = target_info['target']
+    target_type = target_info['type']  # 'domain' or 'ip'
+
+    timeout = httpx.Timeout(req.timeout_seconds, connect=5.0)
+    async with httpx.AsyncClient(timeout=timeout, follow_redirects=True) as client:
+        # 2. Gather DNS data (via DoH)
+        dns_data = {'records_by_type': {}, 'all_records': [], 'resolved_ips': [], 'dnssec_enabled': False}
+        if target_type == 'domain':
+            dns_data = await gather_dns_records(client, target)
+        else:
+            dns_data['resolved_ips'] = [target]
+
+        # 3. Gather RDAP Registration Info
+        rdap_data = await gather_rdap_info(client, target, is_ip=(target_type == 'ip'))
+
+        # 4. Gather Certificates via CT Logs (crt.sh)
+        certs = []
+        if target_type == 'domain':
+            certs = await gather_certificates(client, target)
+
+        # 5. Gather Subdomains (CT Logs + HackerTarget + common probes)
+        subdomains = []
+        if target_type == 'domain':
+            subdomains = await gather_subdomains(client, target, certs)
+
+        # 6. Gather IP & ASN Intelligence for all resolved IPs
+        ip_intel_map = {}
+        all_ips = set(dns_data['resolved_ips'])
+        if target_type == 'ip':
+            all_ips.add(target)
+        for s in subdomains:
+            for sub_ip in s.get('ips', []):
+                all_ips.add(sub_ip)
+
+        for ip in list(all_ips)[:12]:
+            ip_intel_map[ip] = await gather_ip_intel(client, ip)
+
+        # 7. Threat Intelligence (URLhaus)
+        threat_intel = await check_threat_intelligence(client, target)
+
+        # 8. Evidence-Based Security Findings
+        findings = evaluate_security_findings(
+            target=target,
+            target_type=target_type,
+            dns_data=dns_data,
+            rdap_data=rdap_data,
+            certs=certs,
+            subdomains=subdomains,
+            threat_intel=threat_intel,
+        )
+
+        # 9. Compute Overall Risk Level
+        risk_level = 'Low'
+        if any(f.get('severity') == 'Critical' for f in findings):
+            risk_level = 'Critical'
+        elif any(f.get('severity') == 'High' for f in findings):
+            risk_level = 'High'
+        elif any(f.get('severity') == 'Medium' for f in findings):
+            risk_level = 'Medium'
+
+        # 10. Generate Interactive Graph
+        graph = build_interactive_graph(
+            target=target,
+            target_type=target_type,
+            dns_data=dns_data,
+            ip_intel_map=ip_intel_map,
+            certs=certs,
+            subdomains=subdomains,
+            findings=findings,
+        )
+
+        scan_payload = {
+            'target': target,
+            'target_type': target_type,
+            'risk_level': risk_level,
+            'scanned_at': datetime.now(timezone.utc).isoformat(),
+            'dns': dns_data,
+            'rdap': rdap_data,
+            'ip_intel': ip_intel_map,
+            'certificates': certs,
+            'subdomains': subdomains,
+            'threat_intel': threat_intel,
+            'findings': findings,
+            'graph': graph,
+        }
+
+        # 11. Persist to Modular Local JSON Storage
+        saved_record = save_scan_result(scan_payload)
+
+        # 12. Also log audit/scan event if user is authenticated
+        if user:
+            store_scan_event(db, user, 'domain_ip_scan', {'target': target, 'risk': risk_level, 'findings': len(findings)})
+            store_audit_event(db, 'domain_ip_scan', user.id, {'target': target, 'scan_id': saved_record['id']})
+
+        return saved_record
+
+
+@app.get('/api/analyze/history')
+def get_analysis_history(limit: int = 50) -> dict[str, Any]:
+    return {'scans': list_scan_results(limit=limit)}
+
+
+@app.get('/api/analyze/scan/{scan_id}')
+def get_single_scan(scan_id: str) -> dict[str, Any]:
+    scan = get_scan_result(scan_id)
+    if not scan:
+        raise HTTPException(status_code=404, detail='Scan result not found.')
+    return scan
+
+
+@app.delete('/api/analyze/scan/{scan_id}')
+def delete_single_scan(scan_id: str) -> dict[str, Any]:
+    success = delete_scan_result(scan_id)
+    if not success:
+        raise HTTPException(status_code=404, detail='Scan result not found.')
+    return {'status': 'deleted', 'scan_id': scan_id}
+
+
+@app.get('/api/analyze/export/json')
+def export_scan_json(scan_id: str) -> JSONResponse:
+    scan = get_scan_result(scan_id)
+    if not scan:
+        raise HTTPException(status_code=404, detail='Scan result not found.')
+    target_clean = scan.get('target', 'scan').replace('.', '_')
+    filename = f"{target_clean}_intelligence.json"
+    return JSONResponse(
+        content=scan,
+        headers={'Content-Disposition': f'attachment; filename=\"{filename}\"'}
+    )
+
+
+@app.get('/api/analyze/export/pdf')
+def export_scan_pdf(scan_id: str) -> StreamingResponse:
+    scan = get_scan_result(scan_id)
+    if not scan:
+        raise HTTPException(status_code=404, detail='Scan result not found.')
+    pdf_bytes = generate_cyber_pdf_report(scan)
+    target_clean = scan.get('target', 'scan').replace('.', '_')
+    filename = f"{target_clean}_cyber_report.pdf"
+    return StreamingResponse(
+        io.BytesIO(pdf_bytes),
+        media_type='application/pdf',
+        headers={'Content-Disposition': f'attachment; filename=\"{filename}\"'},
+    )
+
+
+@app.get('/api/dashboard/stats')
+def get_dashboard_stats() -> dict[str, Any]:
+    scans_summary = list_scan_results(limit=100)
+    unique_domains = set()
+    total_findings = 0
+    total_ips = 0
+    total_subdomains = 0
+    risk_distribution = {'Critical': 0, 'High': 0, 'Medium': 0, 'Low': 0}
+
+    for s in scans_summary:
+        if s.get('target_type') == 'domain':
+            unique_domains.add(s.get('target'))
+        total_findings += s.get('findings_count', 0)
+        total_ips += s.get('ips_count', 0)
+        total_subdomains += s.get('subdomains_count', 0)
+        lvl = s.get('risk_level', 'Low')
+        if lvl in risk_distribution:
+            risk_distribution[lvl] += 1
+
+    return {
+        'total_scans': len(scans_summary),
+        'unique_domains_analyzed': len(unique_domains),
+        'total_findings': total_findings,
+        'discovered_subdomains': total_subdomains,
+        'resolved_ips': total_ips,
+        'risk_distribution': risk_distribution,
+        'recent_scans': scans_summary[:6],
+    }

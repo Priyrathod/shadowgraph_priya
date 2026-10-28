@@ -352,3 +352,84 @@ export async function getAuditEvents() {
     throw normalizeApiError(error, 'Failed to load audit events.');
   }
 }
+
+
+export async function analyzeDomainOrIp(target) {
+  try {
+    // Analysis pipeline can take up to 45s (DoH + RDAP + crt.sh + subdomains + IP intel)
+    const { data } = await apiClient.post('/api/analyze/domain-ip', { target }, { timeout: 45000 });
+    return data;
+  } catch (error) {
+    throw normalizeApiError(error, 'Failed to complete domain and IP analysis.');
+  }
+}
+
+export async function getAnalysisHistory() {
+  try {
+    const { data } = await apiClient.get('/api/analyze/history');
+    return data.scans || [];
+  } catch (error) {
+    throw normalizeApiError(error, 'Failed to fetch analysis history.');
+  }
+}
+
+export async function getSingleScan(scanId) {
+  try {
+    const { data } = await apiClient.get(`/api/analyze/scan/${scanId}`);
+    return data;
+  } catch (error) {
+    throw normalizeApiError(error, 'Failed to load scan record.');
+  }
+}
+
+export async function deleteSingleScan(scanId) {
+  try {
+    const { data } = await apiClient.delete(`/api/analyze/scan/${scanId}`);
+    return data;
+  } catch (error) {
+    throw normalizeApiError(error, 'Failed to delete scan.');
+  }
+}
+
+export async function getCyberDashboardStats() {
+  try {
+    const { data } = await apiClient.get('/api/dashboard/stats');
+    return data;
+  } catch (error) {
+    throw normalizeApiError(error, 'Failed to load dashboard statistics.');
+  }
+}
+
+export async function downloadCyberJsonReport(scanId, targetName = 'target') {
+  try {
+    const response = await apiClient.get('/api/analyze/export/json', {
+      params: { scan_id: scanId }
+    });
+    const blob = new Blob([JSON.stringify(response.data, null, 2)], { type: 'application/json' });
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `${targetName}_intelligence.json`;
+    link.click();
+    window.URL.revokeObjectURL(url);
+  } catch (error) {
+    throw normalizeApiError(error, 'Failed to download JSON report.');
+  }
+}
+
+export async function downloadCyberPdfReport(scanId, targetName = 'target') {
+  try {
+    const response = await apiClient.get('/api/analyze/export/pdf', {
+      params: { scan_id: scanId },
+      responseType: 'blob'
+    });
+    const url = window.URL.createObjectURL(new Blob([response.data], { type: 'application/pdf' }));
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `${targetName}_cyber_report.pdf`;
+    link.click();
+    window.URL.revokeObjectURL(url);
+  } catch (error) {
+    throw normalizeApiError(error, 'Failed to download PDF report.');
+  }
+}

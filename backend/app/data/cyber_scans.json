@@ -1,0 +1,1654 @@
+[
+  {
+    "target": "github.com",
+    "target_type": "domain",
+    "risk_level": "Low",
+    "scanned_at": "2026-10-28T19:06:41.074162+00:00",
+    "dns": {
+      "records_by_type": {
+        "A": [
+          {
+            "name": "github.com",
+            "type": "A",
+            "ttl": 38,
+            "data": "20.207.73.82"
+          }
+        ],
+        "AAAA": [],
+        "MX": [
+          {
+            "name": "github.com",
+            "type": "MX",
+            "ttl": 300,
+            "data": "0 github-com.mail.protection.outlook.com."
+          }
+        ],
+        "TXT": [
+          {
+            "name": "github.com",
+            "type": "TXT",
+            "ttl": 55,
+            "data": "00Dd0000000hHE0=1TBKg000000TN2r"
+          },
+          {
+            "name": "github.com",
+            "type": "TXT",
+            "ttl": 55,
+            "data": "MS=6BF03E6AF5CB689E315FB6199603BABF2C88D805"
+          },
+          {
+            "name": "github.com",
+            "type": "TXT",
+            "ttl": 55,
+            "data": "MS=ms44452932"
+          },
+          {
+            "name": "github.com",
+            "type": "TXT",
+            "ttl": 55,
+            "data": "MS=ms58704441"
+          },
+          {
+            "name": "github.com",
+            "type": "TXT",
+            "ttl": 55,
+            "data": "TAILSCALE-xOzoDvFUzZr5YYVCQFuD"
+          },
+          {
+            "name": "github.com",
+            "type": "TXT",
+            "ttl": 55,
+            "data": "adobe-idp-site-verification=b92c9e999aef825edc36e0a3d847d2dbad5b2fc0e05c79ddd7a16139b48ecf4b"
+          },
+          {
+            "name": "github.com",
+            "type": "TXT",
+            "ttl": 55,
+            "data": "anthropic-domain-verification-4az7qn=if8YWuRRqwLycGJDooumzHtxm"
+          },
+          {
+            "name": "github.com",
+            "type": "TXT",
+            "ttl": 55,
+            "data": "apple-domain-verification=RyQhdzTl6Z6x8ZP4"
+          },
+          {
+            "name": "github.com",
+            "type": "TXT",
+            "ttl": 55,
+            "data": "atlassian-domain-verification=jjgw98AKv2aeoYFxiL/VFaoyPkn3undEssTRuMg6C/3Fp/iqhkV4HVV7WjYlVeF8"
+          },
+          {
+            "name": "github.com",
+            "type": "TXT",
+            "ttl": 55,
+            "data": "calendly-site-verification=at0DQARi7IZvJtXQAWhMqpmIzpvoBNF7aam5VKKxP"
+          },
+          {
+            "name": "github.com",
+            "type": "TXT",
+            "ttl": 55,
+            "data": "cursor-domain-verification-gtfwmt=1rfLOtiTngX5QSxD5HvNKTvm3"
+          },
+          {
+            "name": "github.com",
+            "type": "TXT",
+            "ttl": 55,
+            "data": "docusign=087098e3-3d46-47b7-9b4e-8a23028154cd"
+          },
+          {
+            "name": "github.com",
+            "type": "TXT",
+            "ttl": 55,
+            "data": "facebook-domain-verification=39xu4jzl7roi7x0n93ldkxjiaarx50"
+          },
+          {
+            "name": "github.com",
+            "type": "TXT",
+            "ttl": 55,
+            "data": "google-site-verification=82Le34Flgtd15ojYhHlGF_6g72muSjamlMVThBOJpks"
+          },
+          {
+            "name": "github.com",
+            "type": "TXT",
+            "ttl": 55,
+            "data": "google-site-verification=UTM-3akMgubp6tQtgEuAkYNYLyYAvpTnnSrDMWoDR3o"
+          },
+          {
+            "name": "github.com",
+            "type": "TXT",
+            "ttl": 55,
+            "data": "jamf-site-verification=XtaPNIYghF_e_xRDI8CjgQ"
+          },
+          {
+            "name": "github.com",
+            "type": "TXT",
+            "ttl": 55,
+            "data": "krisp-domain-verification=ZlyiK7XLhnaoUQb2hpak1PLY7dFkl1WE"
+          },
+          {
+            "name": "github.com",
+            "type": "TXT",
+            "ttl": 55,
+            "data": "loom-site-verification=f3787154f1154b7880e720a511ea664d"
+          },
+          {
+            "name": "github.com",
+            "type": "TXT",
+            "ttl": 55,
+            "data": "miro-verification=d2e174fdb00c71e0bcf58f8e58c3da2dd80dcfa9"
+          },
+          {
+            "name": "github.com",
+            "type": "TXT",
+            "ttl": 55,
+            "data": "openai-domain-verification=dv-3nh33eQwdkotMIAzLrIDVZo1"
+          },
+          {
+            "name": "github.com",
+            "type": "TXT",
+            "ttl": 55,
+            "data": "serval-domain-verification-ydryhj=qbkiEakpwEpTvHh5fIiCqtaue"
+          },
+          {
+            "name": "github.com",
+            "type": "TXT",
+            "ttl": 55,
+            "data": "shopify-verification-code=t1YPwcmvnxZyBycaCpk1MPyWoFs72o"
+          },
+          {
+            "name": "github.com",
+            "type": "TXT",
+            "ttl": 55,
+            "data": "stripe-verification=f88ef17321660a01bab1660454192e014defa29ba7b8de9633c69d6b4912217f"
+          },
+          {
+            "name": "github.com",
+            "type": "TXT",
+            "ttl": 55,
+            "data": "v=spf1 ip4:192.30.252.0/22 include:spf.protection.outlook.com include:_netblocks.google.com include:_netblocks2.google.com include:mail.zendesk.com include:_spf.salesforce.com include:servers.mcsv.net include:mktomail.com include:sendgrid.net ip4:62.253.2\" \"27.114 ip4:166.78.69.169 ip4:166.78.69.170 ip4:166.78.71.131 ~all"
+          }
+        ],
+        "NS": [
+          {
+            "name": "github.com",
+            "type": "NS",
+            "ttl": 900,
+            "data": "dns1.p08.nsone.net."
+          },
+          {
+            "name": "github.com",
+            "type": "NS",
+            "ttl": 900,
+            "data": "dns2.p08.nsone.net."
+          },
+          {
+            "name": "github.com",
+            "type": "NS",
+            "ttl": 900,
+            "data": "dns3.p08.nsone.net."
+          },
+          {
+            "name": "github.com",
+            "type": "NS",
+            "ttl": 900,
+            "data": "dns4.p08.nsone.net."
+          },
+          {
+            "name": "github.com",
+            "type": "NS",
+            "ttl": 900,
+            "data": "ns-1283.awsdns-32.org."
+          },
+          {
+            "name": "github.com",
+            "type": "NS",
+            "ttl": 900,
+            "data": "ns-1707.awsdns-21.co.uk."
+          },
+          {
+            "name": "github.com",
+            "type": "NS",
+            "ttl": 900,
+            "data": "ns-421.awsdns-52.com."
+          },
+          {
+            "name": "github.com",
+            "type": "NS",
+            "ttl": 900,
+            "data": "ns-520.awsdns-01.net."
+          }
+        ],
+        "CNAME": [],
+        "SOA": [
+          {
+            "name": "github.com",
+            "type": "SOA",
+            "ttl": 900,
+            "data": "ns-1707.awsdns-21.co.uk. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400"
+          }
+        ],
+        "DMARC": [
+          {
+            "name": "_dmarc.github.com",
+            "type": "TXT",
+            "ttl": 300,
+            "data": "v=DMARC1; p=quarantine; sp=reject; pct=100; rua=mailto:dmarc@github.com; ruf=mailto:dmarc@github.com; fo=1"
+          }
+        ]
+      },
+      "all_records": [
+        {
+          "name": "github.com",
+          "type": "A",
+          "ttl": 38,
+          "data": "20.207.73.82"
+        },
+        {
+          "name": "github.com",
+          "type": "MX",
+          "ttl": 300,
+          "data": "0 github-com.mail.protection.outlook.com."
+        },
+        {
+          "name": "github.com",
+          "type": "TXT",
+          "ttl": 55,
+          "data": "00Dd0000000hHE0=1TBKg000000TN2r"
+        },
+        {
+          "name": "github.com",
+          "type": "TXT",
+          "ttl": 55,
+          "data": "MS=6BF03E6AF5CB689E315FB6199603BABF2C88D805"
+        },
+        {
+          "name": "github.com",
+          "type": "TXT",
+          "ttl": 55,
+          "data": "MS=ms44452932"
+        },
+        {
+          "name": "github.com",
+          "type": "TXT",
+          "ttl": 55,
+          "data": "MS=ms58704441"
+        },
+        {
+          "name": "github.com",
+          "type": "TXT",
+          "ttl": 55,
+          "data": "TAILSCALE-xOzoDvFUzZr5YYVCQFuD"
+        },
+        {
+          "name": "github.com",
+          "type": "TXT",
+          "ttl": 55,
+          "data": "adobe-idp-site-verification=b92c9e999aef825edc36e0a3d847d2dbad5b2fc0e05c79ddd7a16139b48ecf4b"
+        },
+        {
+          "name": "github.com",
+          "type": "TXT",
+          "ttl": 55,
+          "data": "anthropic-domain-verification-4az7qn=if8YWuRRqwLycGJDooumzHtxm"
+        },
+        {
+          "name": "github.com",
+          "type": "TXT",
+          "ttl": 55,
+          "data": "apple-domain-verification=RyQhdzTl6Z6x8ZP4"
+        },
+        {
+          "name": "github.com",
+          "type": "TXT",
+          "ttl": 55,
+          "data": "atlassian-domain-verification=jjgw98AKv2aeoYFxiL/VFaoyPkn3undEssTRuMg6C/3Fp/iqhkV4HVV7WjYlVeF8"
+        },
+        {
+          "name": "github.com",
+          "type": "TXT",
+          "ttl": 55,
+          "data": "calendly-site-verification=at0DQARi7IZvJtXQAWhMqpmIzpvoBNF7aam5VKKxP"
+        },
+        {
+          "name": "github.com",
+          "type": "TXT",
+          "ttl": 55,
+          "data": "cursor-domain-verification-gtfwmt=1rfLOtiTngX5QSxD5HvNKTvm3"
+        },
+        {
+          "name": "github.com",
+          "type": "TXT",
+          "ttl": 55,
+          "data": "docusign=087098e3-3d46-47b7-9b4e-8a23028154cd"
+        },
+        {
+          "name": "github.com",
+          "type": "TXT",
+          "ttl": 55,
+          "data": "facebook-domain-verification=39xu4jzl7roi7x0n93ldkxjiaarx50"
+        },
+        {
+          "name": "github.com",
+          "type": "TXT",
+          "ttl": 55,
+          "data": "google-site-verification=82Le34Flgtd15ojYhHlGF_6g72muSjamlMVThBOJpks"
+        },
+        {
+          "name": "github.com",
+          "type": "TXT",
+          "ttl": 55,
+          "data": "google-site-verification=UTM-3akMgubp6tQtgEuAkYNYLyYAvpTnnSrDMWoDR3o"
+        },
+        {
+          "name": "github.com",
+          "type": "TXT",
+          "ttl": 55,
+          "data": "jamf-site-verification=XtaPNIYghF_e_xRDI8CjgQ"
+        },
+        {
+          "name": "github.com",
+          "type": "TXT",
+          "ttl": 55,
+          "data": "krisp-domain-verification=ZlyiK7XLhnaoUQb2hpak1PLY7dFkl1WE"
+        },
+        {
+          "name": "github.com",
+          "type": "TXT",
+          "ttl": 55,
+          "data": "loom-site-verification=f3787154f1154b7880e720a511ea664d"
+        },
+        {
+          "name": "github.com",
+          "type": "TXT",
+          "ttl": 55,
+          "data": "miro-verification=d2e174fdb00c71e0bcf58f8e58c3da2dd80dcfa9"
+        },
+        {
+          "name": "github.com",
+          "type": "TXT",
+          "ttl": 55,
+          "data": "openai-domain-verification=dv-3nh33eQwdkotMIAzLrIDVZo1"
+        },
+        {
+          "name": "github.com",
+          "type": "TXT",
+          "ttl": 55,
+          "data": "serval-domain-verification-ydryhj=qbkiEakpwEpTvHh5fIiCqtaue"
+        },
+        {
+          "name": "github.com",
+          "type": "TXT",
+          "ttl": 55,
+          "data": "shopify-verification-code=t1YPwcmvnxZyBycaCpk1MPyWoFs72o"
+        },
+        {
+          "name": "github.com",
+          "type": "TXT",
+          "ttl": 55,
+          "data": "stripe-verification=f88ef17321660a01bab1660454192e014defa29ba7b8de9633c69d6b4912217f"
+        },
+        {
+          "name": "github.com",
+          "type": "TXT",
+          "ttl": 55,
+          "data": "v=spf1 ip4:192.30.252.0/22 include:spf.protection.outlook.com include:_netblocks.google.com include:_netblocks2.google.com include:mail.zendesk.com include:_spf.salesforce.com include:servers.mcsv.net include:mktomail.com include:sendgrid.net ip4:62.253.2\" \"27.114 ip4:166.78.69.169 ip4:166.78.69.170 ip4:166.78.71.131 ~all"
+        },
+        {
+          "name": "github.com",
+          "type": "NS",
+          "ttl": 900,
+          "data": "dns1.p08.nsone.net."
+        },
+        {
+          "name": "github.com",
+          "type": "NS",
+          "ttl": 900,
+          "data": "dns2.p08.nsone.net."
+        },
+        {
+          "name": "github.com",
+          "type": "NS",
+          "ttl": 900,
+          "data": "dns3.p08.nsone.net."
+        },
+        {
+          "name": "github.com",
+          "type": "NS",
+          "ttl": 900,
+          "data": "dns4.p08.nsone.net."
+        },
+        {
+          "name": "github.com",
+          "type": "NS",
+          "ttl": 900,
+          "data": "ns-1283.awsdns-32.org."
+        },
+        {
+          "name": "github.com",
+          "type": "NS",
+          "ttl": 900,
+          "data": "ns-1707.awsdns-21.co.uk."
+        },
+        {
+          "name": "github.com",
+          "type": "NS",
+          "ttl": 900,
+          "data": "ns-421.awsdns-52.com."
+        },
+        {
+          "name": "github.com",
+          "type": "NS",
+          "ttl": 900,
+          "data": "ns-520.awsdns-01.net."
+        },
+        {
+          "name": "github.com",
+          "type": "SOA",
+          "ttl": 900,
+          "data": "ns-1707.awsdns-21.co.uk. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400"
+        }
+      ],
+      "resolved_ips": [
+        "20.207.73.82"
+      ],
+      "dnssec_enabled": false
+    },
+    "rdap": {
+      "handle": "1264983250_DOMAIN_COM-VRSN",
+      "registrar": "MarkMonitor Inc.",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "registration_date": "2007-10-09T18:20:50Z",
+      "expiration_date": "2028-10-09T18:20:50Z",
+      "last_changed": "2026-09-07T09:22:52Z",
+      "nameservers": [
+        "DNS1.P08.NSONE.NET",
+        "DNS2.P08.NSONE.NET",
+        "DNS3.P08.NSONE.NET",
+        "DNS4.P08.NSONE.NET",
+        "NS-1283.AWSDNS-32.ORG",
+        "NS-1707.AWSDNS-21.CO.UK",
+        "NS-421.AWSDNS-52.COM",
+        "NS-520.AWSDNS-01.NET"
+      ],
+      "raw_status": 200
+    },
+    "ip_intel": {
+      "185.199.109.153": {
+        "ip": "185.199.109.153",
+        "asn": "AS54113",
+        "as_org": "GitHub, Inc.",
+        "country": "United States",
+        "country_code": "US",
+        "city": "San Francisco",
+        "region": "California",
+        "isp": "Fastly, Inc.",
+        "latitude": 37.774926,
+        "longitude": -122.4194208
+      },
+      "185.199.108.153": {
+        "ip": "185.199.108.153",
+        "asn": "AS54113",
+        "as_org": "GitHub, Inc.",
+        "country": "United States",
+        "country_code": "US",
+        "city": "San Francisco",
+        "region": "California",
+        "isp": "Fastly, Inc.",
+        "latitude": 37.774926,
+        "longitude": -122.4194208
+      },
+      "52.251.114.96": {
+        "ip": "52.251.114.96",
+        "asn": "AS8075",
+        "as_org": "Microsoft Corporation",
+        "country": "United States",
+        "country_code": "US",
+        "city": "Chase City",
+        "region": "Virginia",
+        "isp": "Microsoft Corporation",
+        "latitude": 36.7993067,
+        "longitude": -78.4583277
+      },
+      "185.199.108.154": {
+        "ip": "185.199.108.154",
+        "asn": "AS54113",
+        "as_org": "GitHub, Inc.",
+        "country": "United States",
+        "country_code": "US",
+        "city": "San Francisco",
+        "region": "California",
+        "isp": "Fastly, Inc.",
+        "latitude": 37.774926,
+        "longitude": -122.4194208
+      },
+      "185.199.111.133": {
+        "ip": "185.199.111.133",
+        "asn": "AS54113",
+        "as_org": "GitHub, Inc.",
+        "country": "United States",
+        "country_code": "US",
+        "city": "San Francisco",
+        "region": "California",
+        "isp": "Fastly, Inc.",
+        "latitude": 37.774926,
+        "longitude": -122.4194208
+      },
+      "185.199.111.153": {
+        "ip": "185.199.111.153",
+        "asn": "AS54113",
+        "as_org": "GitHub, Inc.",
+        "country": "United States",
+        "country_code": "US",
+        "city": "San Francisco",
+        "region": "California",
+        "isp": "Fastly, Inc.",
+        "latitude": 37.774926,
+        "longitude": -122.4194208
+      },
+      "185.199.109.133": {
+        "ip": "185.199.109.133",
+        "asn": "AS54113",
+        "as_org": "GitHub, Inc.",
+        "country": "United States",
+        "country_code": "US",
+        "city": "San Francisco",
+        "region": "California",
+        "isp": "Fastly, Inc.",
+        "latitude": 37.774926,
+        "longitude": -122.4194208
+      },
+      "cli.github.io.": {
+        "ip": "cli.github.io.",
+        "asn": "AS54113",
+        "as_org": "GitHub, Inc.",
+        "country": "United States",
+        "country_code": "US",
+        "city": "San Francisco",
+        "region": "California",
+        "isp": "Fastly, Inc.",
+        "latitude": 37.774926,
+        "longitude": -122.4194208
+      },
+      "185.199.110.133": {
+        "ip": "185.199.110.133",
+        "asn": "AS54113",
+        "as_org": "GitHub, Inc.",
+        "country": "United States",
+        "country_code": "US",
+        "city": "San Francisco",
+        "region": "California",
+        "isp": "Fastly, Inc.",
+        "latitude": 37.774926,
+        "longitude": -122.4194208
+      },
+      "20.207.73.82": {
+        "ip": "20.207.73.82",
+        "asn": "AS8075",
+        "as_org": "Microsoft Corporation",
+        "country": "India",
+        "country_code": "IN",
+        "city": "Pune",
+        "region": "Maharashtra",
+        "isp": "Microsoft Corporation",
+        "latitude": 18.5195697,
+        "longitude": 73.8553482
+      },
+      "github.github.io.": {
+        "ip": "github.github.io.",
+        "asn": "AS54113",
+        "as_org": "GitHub, Inc.",
+        "country": "United States",
+        "country_code": "US",
+        "city": "San Francisco",
+        "region": "California",
+        "isp": "Fastly, Inc.",
+        "latitude": 37.774926,
+        "longitude": -122.4194208
+      },
+      "m.communication.github.com.cname.campaign.adobe.com.": {
+        "ip": "m.communication.github.com.cname.campaign.adobe.com.",
+        "asn": "AS8075",
+        "as_org": "Microsoft Corporation",
+        "country": "United States",
+        "country_code": "US",
+        "city": "Chase City",
+        "region": "Virginia",
+        "isp": "Microsoft Corporation",
+        "latitude": 36.7993067,
+        "longitude": -78.4583277
+      }
+    },
+    "certificates": [
+      {
+        "common_name": "github.com",
+        "issuer": "Sectigo Public Server Authentication CA DV R36",
+        "not_before": "2026-10-14T00:00:00",
+        "not_after": "2027-01-11T23:59:59",
+        "serial_number": "628ce509d633e3e4de237be5e4e0e4f5",
+        "logged_at": ""
+      },
+      {
+        "common_name": "*.registry.github.com",
+        "issuer": "Sectigo Public Server Authentication CA DV R36",
+        "not_before": "2026-10-10T00:00:00",
+        "not_after": "2027-01-07T23:59:59",
+        "serial_number": "00c5ab164e9290374fba5e36b5bc4545c6",
+        "logged_at": ""
+      },
+      {
+        "common_name": "*.github.com",
+        "issuer": "Sectigo Public Server Authentication CA DV R36",
+        "not_before": "2026-10-08T00:00:00",
+        "not_after": "2027-01-05T23:59:59",
+        "serial_number": "00870e707bca1b6faecad4242c8005029a",
+        "logged_at": ""
+      },
+      {
+        "common_name": "design-camp.github.com",
+        "issuer": "YR1",
+        "not_before": "2026-10-04T07:13:18",
+        "not_after": "2027-01-02T07:13:17",
+        "serial_number": "051c251af14f33afaae2aef2734d4920b18a",
+        "logged_at": ""
+      },
+      {
+        "common_name": "ghicons.github.com",
+        "issuer": "YR2",
+        "not_before": "2026-10-04T03:46:19",
+        "not_after": "2027-01-02T03:46:18",
+        "serial_number": "0620bdce6fce461fc24d68992d206239b12b",
+        "logged_at": ""
+      },
+      {
+        "common_name": "*.pkg.github.com",
+        "issuer": "Sectigo Public Server Authentication CA DV R36",
+        "not_before": "2026-10-02T00:00:00",
+        "not_after": "2026-12-30T23:59:59",
+        "serial_number": "2ac978ce777c505279ffab96c408629d",
+        "logged_at": ""
+      },
+      {
+        "common_name": "*.smtp.github.com",
+        "issuer": "Sectigo Public Server Authentication CA DV R36",
+        "not_before": "2026-09-25T00:00:00",
+        "not_after": "2026-12-23T23:59:59",
+        "serial_number": "00ffd79299a5a0caa4e82a0dc60cbd6d2e",
+        "logged_at": ""
+      },
+      {
+        "common_name": "support.enterprise.github.com",
+        "issuer": "YR2",
+        "not_before": "2026-09-19T23:35:20",
+        "not_after": "2026-12-18T23:35:19",
+        "serial_number": "05070dc5712401b4c10d05e226c06cbc03e2",
+        "logged_at": ""
+      },
+      {
+        "common_name": "ws.support.github.com",
+        "issuer": "YR1",
+        "not_before": "2026-09-19T23:12:42",
+        "not_after": "2026-12-18T23:12:41",
+        "serial_number": "06d7aa3f1e992d160ee9dadc0fb7ed72177c",
+        "logged_at": ""
+      },
+      {
+        "common_name": "api.security.github.com",
+        "issuer": "YR2",
+        "not_before": "2026-09-19T23:12:23",
+        "not_after": "2026-12-18T23:12:22",
+        "serial_number": "06f1163ac1c5027519058ad6c8a1d5281350",
+        "logged_at": ""
+      },
+      {
+        "common_name": "api.security.github.com",
+        "issuer": "YR1",
+        "not_before": "2026-09-18T23:14:18",
+        "not_after": "2026-12-17T23:14:17",
+        "serial_number": "060ec128e54f6ef068cf8c6330cf9042892a",
+        "logged_at": ""
+      },
+      {
+        "common_name": "ws.support.github.com",
+        "issuer": "YR1",
+        "not_before": "2026-09-18T23:13:55",
+        "not_after": "2026-12-17T23:13:54",
+        "serial_number": "053c9de38a6a767d38322cda84bfc6a97c07",
+        "logged_at": ""
+      },
+      {
+        "common_name": "model-launchkit.github.com",
+        "issuer": "YR1",
+        "not_before": "2026-09-17T20:16:48",
+        "not_after": "2026-12-16T20:16:47",
+        "serial_number": "0581cb5c98377350544d63ef0c26c51d66eb",
+        "logged_at": ""
+      },
+      {
+        "common_name": "skills.github.com",
+        "issuer": "YR2",
+        "not_before": "2026-09-17T15:51:52",
+        "not_after": "2026-12-16T15:51:51",
+        "serial_number": "06273e72add7caba51096740912cf80b4bb2",
+        "logged_at": ""
+      },
+      {
+        "common_name": "bug-bash.github.com",
+        "issuer": "YR1",
+        "not_before": "2026-09-05T19:47:19",
+        "not_after": "2026-12-04T19:47:18",
+        "serial_number": "054e089657ea038d4e4c8929596a905d2f56",
+        "logged_at": ""
+      },
+      {
+        "common_name": "awesome-copilot.github.com",
+        "issuer": "YR2",
+        "not_before": "2026-09-05T14:17:50",
+        "not_after": "2026-12-04T14:17:49",
+        "serial_number": "06b6e2677b20b8aa16af09f498667be23ead",
+        "logged_at": ""
+      },
+      {
+        "common_name": "copilot-reports.github.com",
+        "issuer": "YR2",
+        "not_before": "2026-09-01T00:07:53",
+        "not_after": "2026-11-30T00:07:52",
+        "serial_number": "05faf4ddfdd7e44e6b72bb661aff1f8ddd98",
+        "logged_at": ""
+      },
+      {
+        "common_name": "github.com",
+        "issuer": "Sectigo Public Server Authentication CA DV E36",
+        "not_before": "2026-09-01T00:00:00",
+        "not_after": "2026-11-29T23:59:59",
+        "serial_number": "00a59ebdb596751db7f5c095079613953c",
+        "logged_at": ""
+      },
+      {
+        "common_name": "*.github.com",
+        "issuer": "Sectigo Public Server Authentication CA DV R36",
+        "not_before": "2026-08-31T00:00:00",
+        "not_after": "2026-11-28T23:59:59",
+        "serial_number": "0085c7ca584e21267a64e83f0c9bac95b6",
+        "logged_at": ""
+      },
+      {
+        "common_name": "copilot-billing-preview.github.com",
+        "issuer": "YR1",
+        "not_before": "2026-08-30T13:29:49",
+        "not_after": "2026-11-28T13:29:48",
+        "serial_number": "06d3555ef5d14cd872bed973ba7e855bf041",
+        "logged_at": ""
+      }
+    ],
+    "subdomains": [
+      {
+        "subdomain": "blog-freeze.github.com",
+        "ips": [
+          "github.github.io.",
+          "185.199.108.153",
+          "185.199.109.153",
+          "185.199.110.153",
+          "185.199.111.153"
+        ],
+        "status": "Active"
+      },
+      {
+        "subdomain": "m.communication.github.com",
+        "ips": [
+          "m.communication.github.com.cname.campaign.adobe.com.",
+          "mscom-mkt-prod22-m.adobe-campaign.com.",
+          "mscom-mkt-prod22-lb.campaign.adobe.com.",
+          "52.251.114.96"
+        ],
+        "status": "Active"
+      },
+      {
+        "subdomain": "customer-stories-feed.github.com",
+        "ips": [
+          "github.github.io.",
+          "185.199.110.153",
+          "185.199.109.153",
+          "185.199.111.153",
+          "185.199.108.153"
+        ],
+        "status": "Active"
+      },
+      {
+        "subdomain": "accelerator.github.com",
+        "ips": [
+          "github.github.io.",
+          "185.199.108.153",
+          "185.199.110.153",
+          "185.199.111.153",
+          "185.199.109.153"
+        ],
+        "status": "Active"
+      },
+      {
+        "subdomain": "cdn-185-199-109-133.github.com",
+        "ips": [
+          "185.199.109.133"
+        ],
+        "status": "Active"
+      },
+      {
+        "subdomain": "cli.github.com",
+        "ips": [
+          "cli.github.io.",
+          "185.199.108.153",
+          "185.199.111.153",
+          "185.199.110.153",
+          "185.199.109.153"
+        ],
+        "status": "Active"
+      },
+      {
+        "subdomain": "ghicons.github.com",
+        "ips": [
+          "github.github.io.",
+          "185.199.109.153",
+          "185.199.108.153",
+          "185.199.111.153",
+          "185.199.110.153"
+        ],
+        "status": "Active"
+      },
+      {
+        "subdomain": "bug-bash.github.com",
+        "ips": [
+          "github.github.io.",
+          "185.199.109.153",
+          "185.199.110.153",
+          "185.199.108.153",
+          "185.199.111.153"
+        ],
+        "status": "Active"
+      },
+      {
+        "subdomain": "cdn-185-199-108-133.github.com",
+        "ips": [
+          "185.199.108.133"
+        ],
+        "status": "Active"
+      },
+      {
+        "subdomain": "bounty.github.com",
+        "ips": [
+          "github.github.io.",
+          "185.199.110.153",
+          "185.199.108.153",
+          "185.199.109.153",
+          "185.199.111.153"
+        ],
+        "status": "Active"
+      },
+      {
+        "subdomain": "cdn-185-199-110-153.github.com",
+        "ips": [
+          "185.199.110.153"
+        ],
+        "status": "Active"
+      },
+      {
+        "subdomain": "cdn-185-199-108-154.github.com",
+        "ips": [
+          "185.199.108.154"
+        ],
+        "status": "Active"
+      },
+      {
+        "subdomain": "classroom.github.com",
+        "ips": [
+          "redirect.github.com.",
+          "140.82.114.17"
+        ],
+        "status": "Active"
+      },
+      {
+        "subdomain": "model-launchkit.github.com",
+        "ips": [
+          "github.github.io.",
+          "185.199.108.153",
+          "185.199.111.153",
+          "185.199.110.153",
+          "185.199.109.153"
+        ],
+        "status": "Active"
+      },
+      {
+        "subdomain": "copilot-billing-preview.github.com",
+        "ips": [],
+        "status": "Unresolved"
+      },
+      {
+        "subdomain": "cdn-185-199-111-153.github.com",
+        "ips": [
+          "185.199.111.153"
+        ],
+        "status": "Active"
+      },
+      {
+        "subdomain": "asset-generator.github.com",
+        "ips": [
+          "github.github.io.",
+          "185.199.110.153",
+          "185.199.109.153",
+          "185.199.108.153",
+          "185.199.111.153"
+        ],
+        "status": "Active"
+      },
+      {
+        "subdomain": "cdn-185-199-110-133.github.com",
+        "ips": [
+          "185.199.110.133"
+        ],
+        "status": "Active"
+      },
+      {
+        "subdomain": "boxen.github.com",
+        "ips": [
+          "github.github.io.",
+          "185.199.110.153",
+          "185.199.109.153",
+          "185.199.108.153",
+          "185.199.111.153"
+        ],
+        "status": "Active"
+      },
+      {
+        "subdomain": "atom-installer.github.com",
+        "ips": [
+          "185.199.108.133",
+          "185.199.109.133",
+          "185.199.110.133",
+          "185.199.111.133"
+        ],
+        "status": "Active"
+      },
+      {
+        "subdomain": "design-camp.github.com",
+        "ips": [
+          "github.github.io.",
+          "185.199.108.153",
+          "185.199.111.153",
+          "185.199.110.153",
+          "185.199.109.153"
+        ],
+        "status": "Active"
+      },
+      {
+        "subdomain": "cdn-185-199-108-153.github.com",
+        "ips": [
+          "185.199.108.153"
+        ],
+        "status": "Active"
+      },
+      {
+        "subdomain": "skills.github.com",
+        "ips": [
+          "github.github.io.",
+          "185.199.109.153",
+          "185.199.110.153",
+          "185.199.108.153",
+          "185.199.111.153"
+        ],
+        "status": "Active"
+      },
+      {
+        "subdomain": "copilot.github.com",
+        "ips": [
+          "redirect.github.com.",
+          "140.82.112.18"
+        ],
+        "status": "Active"
+      },
+      {
+        "subdomain": "collector-cdn.github.com",
+        "ips": [
+          "185.199.111.133",
+          "185.199.108.133",
+          "185.199.110.133",
+          "185.199.109.133"
+        ],
+        "status": "Active"
+      }
+    ],
+    "threat_intel": {
+      "threat_detected": false,
+      "details": {},
+      "findings": []
+    },
+    "findings": [
+      {
+        "title": "DNSSEC Not Enabled",
+        "severity": "Low",
+        "source": "DNS-over-HTTPS Authenticated Data Flag",
+        "evidence": "Authoritative DNS response lacked the AD (Authenticated Data) flag for DNSSEC validation.",
+        "remediation": "Enable DNSSEC signing at your domain registrar and DNS provider to protect against DNS cache poisoning."
+      }
+    ],
+    "graph": {
+      "nodes": [
+        {
+          "data": {
+            "id": "target:github.com",
+            "label": "github.com",
+            "type": "Domain",
+            "category": "Target",
+            "detail": "Root Target (DOMAIN)"
+          }
+        },
+        {
+          "data": {
+            "id": "ip:20.207.73.82",
+            "label": "20.207.73.82",
+            "type": "IP",
+            "category": "Infrastructure",
+            "detail": "IP: 20.207.73.82 | Microsoft Corporation | India",
+            "asn": "AS8075",
+            "country": "India"
+          }
+        },
+        {
+          "data": {
+            "id": "asn:AS8075",
+            "label": "ASN AS8075",
+            "type": "ASN",
+            "category": "Network",
+            "detail": "Microsoft Corporation"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:blog-freeze.github.com",
+            "label": "blog-freeze.github.com",
+            "type": "Subdomain",
+            "category": "Asset",
+            "detail": "Active Subdomain | IPs: github.github.io., 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:m.communication.github.com",
+            "label": "m.communication.github.com",
+            "type": "Subdomain",
+            "category": "Asset",
+            "detail": "Active Subdomain | IPs: m.communication.github.com.cname.campaign.adobe.com., mscom-mkt-prod22-m.adobe-campaign.com., mscom-mkt-prod22-lb.campaign.adobe.com., 52.251.114.96"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:customer-stories-feed.github.com",
+            "label": "customer-stories-feed.github.com",
+            "type": "Subdomain",
+            "category": "Asset",
+            "detail": "Active Subdomain | IPs: github.github.io., 185.199.110.153, 185.199.109.153, 185.199.111.153, 185.199.108.153"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:accelerator.github.com",
+            "label": "accelerator.github.com",
+            "type": "Subdomain",
+            "category": "Asset",
+            "detail": "Active Subdomain | IPs: github.github.io., 185.199.108.153, 185.199.110.153, 185.199.111.153, 185.199.109.153"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:cdn-185-199-109-133.github.com",
+            "label": "cdn-185-199-109-133.github.com",
+            "type": "Subdomain",
+            "category": "Asset",
+            "detail": "Active Subdomain | IPs: 185.199.109.133"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:cli.github.com",
+            "label": "cli.github.com",
+            "type": "Subdomain",
+            "category": "Asset",
+            "detail": "Active Subdomain | IPs: cli.github.io., 185.199.108.153, 185.199.111.153, 185.199.110.153, 185.199.109.153"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:ghicons.github.com",
+            "label": "ghicons.github.com",
+            "type": "Subdomain",
+            "category": "Asset",
+            "detail": "Active Subdomain | IPs: github.github.io., 185.199.109.153, 185.199.108.153, 185.199.111.153, 185.199.110.153"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:bug-bash.github.com",
+            "label": "bug-bash.github.com",
+            "type": "Subdomain",
+            "category": "Asset",
+            "detail": "Active Subdomain | IPs: github.github.io., 185.199.109.153, 185.199.110.153, 185.199.108.153, 185.199.111.153"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:cdn-185-199-108-133.github.com",
+            "label": "cdn-185-199-108-133.github.com",
+            "type": "Subdomain",
+            "category": "Asset",
+            "detail": "Active Subdomain | IPs: 185.199.108.133"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:bounty.github.com",
+            "label": "bounty.github.com",
+            "type": "Subdomain",
+            "category": "Asset",
+            "detail": "Active Subdomain | IPs: github.github.io., 185.199.110.153, 185.199.108.153, 185.199.109.153, 185.199.111.153"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:cdn-185-199-110-153.github.com",
+            "label": "cdn-185-199-110-153.github.com",
+            "type": "Subdomain",
+            "category": "Asset",
+            "detail": "Active Subdomain | IPs: 185.199.110.153"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:cdn-185-199-108-154.github.com",
+            "label": "cdn-185-199-108-154.github.com",
+            "type": "Subdomain",
+            "category": "Asset",
+            "detail": "Active Subdomain | IPs: 185.199.108.154"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:classroom.github.com",
+            "label": "classroom.github.com",
+            "type": "Subdomain",
+            "category": "Asset",
+            "detail": "Active Subdomain | IPs: redirect.github.com., 140.82.114.17"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:model-launchkit.github.com",
+            "label": "model-launchkit.github.com",
+            "type": "Subdomain",
+            "category": "Asset",
+            "detail": "Active Subdomain | IPs: github.github.io., 185.199.108.153, 185.199.111.153, 185.199.110.153, 185.199.109.153"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:copilot-billing-preview.github.com",
+            "label": "copilot-billing-preview.github.com",
+            "type": "Subdomain",
+            "category": "Asset",
+            "detail": "Active Subdomain | IPs: "
+          }
+        },
+        {
+          "data": {
+            "id": "cert:628ce509d633e3e4de237be5e4e0e4f5",
+            "label": "Cert: Sectigo Public Server Authentication CA DV R36",
+            "type": "Certificate",
+            "category": "Security",
+            "detail": "Common Name: github.com | Valid to: 2027-01-11T23:59:59"
+          }
+        },
+        {
+          "data": {
+            "id": "cert:00c5ab164e9290374fba5e36b5bc4545c6",
+            "label": "Cert: Sectigo Public Server Authentication CA DV R36",
+            "type": "Certificate",
+            "category": "Security",
+            "detail": "Common Name: *.registry.github.com | Valid to: 2027-01-07T23:59:59"
+          }
+        },
+        {
+          "data": {
+            "id": "cert:00870e707bca1b6faecad4242c8005029a",
+            "label": "Cert: Sectigo Public Server Authentication CA DV R36",
+            "type": "Certificate",
+            "category": "Security",
+            "detail": "Common Name: *.github.com | Valid to: 2027-01-05T23:59:59"
+          }
+        },
+        {
+          "data": {
+            "id": "cert:051c251af14f33afaae2aef2734d4920b18a",
+            "label": "Cert: YR1",
+            "type": "Certificate",
+            "category": "Security",
+            "detail": "Common Name: design-camp.github.com | Valid to: 2027-01-02T07:13:17"
+          }
+        },
+        {
+          "data": {
+            "id": "cert:0620bdce6fce461fc24d68992d206239b12b",
+            "label": "Cert: YR2",
+            "type": "Certificate",
+            "category": "Security",
+            "detail": "Common Name: ghicons.github.com | Valid to: 2027-01-02T03:46:18"
+          }
+        },
+        {
+          "data": {
+            "id": "cert:2ac978ce777c505279ffab96c408629d",
+            "label": "Cert: Sectigo Public Server Authentication CA DV R36",
+            "type": "Certificate",
+            "category": "Security",
+            "detail": "Common Name: *.pkg.github.com | Valid to: 2026-12-30T23:59:59"
+          }
+        },
+        {
+          "data": {
+            "id": "cert:00ffd79299a5a0caa4e82a0dc60cbd6d2e",
+            "label": "Cert: Sectigo Public Server Authentication CA DV R36",
+            "type": "Certificate",
+            "category": "Security",
+            "detail": "Common Name: *.smtp.github.com | Valid to: 2026-12-23T23:59:59"
+          }
+        },
+        {
+          "data": {
+            "id": "cert:05070dc5712401b4c10d05e226c06cbc03e2",
+            "label": "Cert: YR2",
+            "type": "Certificate",
+            "category": "Security",
+            "detail": "Common Name: support.enterprise.github.com | Valid to: 2026-12-18T23:35:19"
+          }
+        },
+        {
+          "data": {
+            "id": "finding:0",
+            "label": "DNSSEC Not Enabled",
+            "type": "SecurityFinding",
+            "category": "Vulnerability",
+            "severity": "Low",
+            "detail": "Authoritative DNS response lacked the AD (Authenticated Data) flag for DNSSEC validation."
+          }
+        }
+      ],
+      "edges": [
+        {
+          "data": {
+            "id": "target:github.com->ip:20.207.73.82:resolves_to",
+            "source": "target:github.com",
+            "target": "ip:20.207.73.82",
+            "label": "resolves_to"
+          }
+        },
+        {
+          "data": {
+            "id": "ip:20.207.73.82->asn:AS8075:announced_by",
+            "source": "ip:20.207.73.82",
+            "target": "asn:AS8075",
+            "label": "announced_by"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:blog-freeze.github.com->target:github.com:subdomain_of",
+            "source": "sub:blog-freeze.github.com",
+            "target": "target:github.com",
+            "label": "subdomain_of"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:m.communication.github.com->target:github.com:subdomain_of",
+            "source": "sub:m.communication.github.com",
+            "target": "target:github.com",
+            "label": "subdomain_of"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:customer-stories-feed.github.com->target:github.com:subdomain_of",
+            "source": "sub:customer-stories-feed.github.com",
+            "target": "target:github.com",
+            "label": "subdomain_of"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:accelerator.github.com->target:github.com:subdomain_of",
+            "source": "sub:accelerator.github.com",
+            "target": "target:github.com",
+            "label": "subdomain_of"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:cdn-185-199-109-133.github.com->target:github.com:subdomain_of",
+            "source": "sub:cdn-185-199-109-133.github.com",
+            "target": "target:github.com",
+            "label": "subdomain_of"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:cli.github.com->target:github.com:subdomain_of",
+            "source": "sub:cli.github.com",
+            "target": "target:github.com",
+            "label": "subdomain_of"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:ghicons.github.com->target:github.com:subdomain_of",
+            "source": "sub:ghicons.github.com",
+            "target": "target:github.com",
+            "label": "subdomain_of"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:bug-bash.github.com->target:github.com:subdomain_of",
+            "source": "sub:bug-bash.github.com",
+            "target": "target:github.com",
+            "label": "subdomain_of"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:cdn-185-199-108-133.github.com->target:github.com:subdomain_of",
+            "source": "sub:cdn-185-199-108-133.github.com",
+            "target": "target:github.com",
+            "label": "subdomain_of"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:bounty.github.com->target:github.com:subdomain_of",
+            "source": "sub:bounty.github.com",
+            "target": "target:github.com",
+            "label": "subdomain_of"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:cdn-185-199-110-153.github.com->target:github.com:subdomain_of",
+            "source": "sub:cdn-185-199-110-153.github.com",
+            "target": "target:github.com",
+            "label": "subdomain_of"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:cdn-185-199-108-154.github.com->target:github.com:subdomain_of",
+            "source": "sub:cdn-185-199-108-154.github.com",
+            "target": "target:github.com",
+            "label": "subdomain_of"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:classroom.github.com->target:github.com:subdomain_of",
+            "source": "sub:classroom.github.com",
+            "target": "target:github.com",
+            "label": "subdomain_of"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:model-launchkit.github.com->target:github.com:subdomain_of",
+            "source": "sub:model-launchkit.github.com",
+            "target": "target:github.com",
+            "label": "subdomain_of"
+          }
+        },
+        {
+          "data": {
+            "id": "sub:copilot-billing-preview.github.com->target:github.com:subdomain_of",
+            "source": "sub:copilot-billing-preview.github.com",
+            "target": "target:github.com",
+            "label": "subdomain_of"
+          }
+        },
+        {
+          "data": {
+            "id": "target:github.com->cert:628ce509d633e3e4de237be5e4e0e4f5:secured_by",
+            "source": "target:github.com",
+            "target": "cert:628ce509d633e3e4de237be5e4e0e4f5",
+            "label": "secured_by"
+          }
+        },
+        {
+          "data": {
+            "id": "target:github.com->cert:00c5ab164e9290374fba5e36b5bc4545c6:secured_by",
+            "source": "target:github.com",
+            "target": "cert:00c5ab164e9290374fba5e36b5bc4545c6",
+            "label": "secured_by"
+          }
+        },
+        {
+          "data": {
+            "id": "target:github.com->cert:00870e707bca1b6faecad4242c8005029a:secured_by",
+            "source": "target:github.com",
+            "target": "cert:00870e707bca1b6faecad4242c8005029a",
+            "label": "secured_by"
+          }
+        },
+        {
+          "data": {
+            "id": "target:github.com->cert:051c251af14f33afaae2aef2734d4920b18a:secured_by",
+            "source": "target:github.com",
+            "target": "cert:051c251af14f33afaae2aef2734d4920b18a",
+            "label": "secured_by"
+          }
+        },
+        {
+          "data": {
+            "id": "target:github.com->cert:0620bdce6fce461fc24d68992d206239b12b:secured_by",
+            "source": "target:github.com",
+            "target": "cert:0620bdce6fce461fc24d68992d206239b12b",
+            "label": "secured_by"
+          }
+        },
+        {
+          "data": {
+            "id": "target:github.com->cert:2ac978ce777c505279ffab96c408629d:secured_by",
+            "source": "target:github.com",
+            "target": "cert:2ac978ce777c505279ffab96c408629d",
+            "label": "secured_by"
+          }
+        },
+        {
+          "data": {
+            "id": "target:github.com->cert:00ffd79299a5a0caa4e82a0dc60cbd6d2e:secured_by",
+            "source": "target:github.com",
+            "target": "cert:00ffd79299a5a0caa4e82a0dc60cbd6d2e",
+            "label": "secured_by"
+          }
+        },
+        {
+          "data": {
+            "id": "target:github.com->cert:05070dc5712401b4c10d05e226c06cbc03e2:secured_by",
+            "source": "target:github.com",
+            "target": "cert:05070dc5712401b4c10d05e226c06cbc03e2",
+            "label": "secured_by"
+          }
+        },
+        {
+          "data": {
+            "id": "target:github.com->finding:0:has_finding",
+            "source": "target:github.com",
+            "target": "finding:0",
+            "label": "has_finding"
+          }
+        }
+      ],
+      "summary": {
+        "total_nodes": 27,
+        "total_edges": 26,
+        "domains": 1,
+        "ips": 1,
+        "subdomains": 15,
+        "certificates": 8,
+        "findings": 1
+      }
+    },
+    "id": "scan_92b9638c665e",
+    "created_at": "2026-10-28T19:06:41.112276+00:00"
+  },
+  {
+    "target": "1.1.1.1",
+    "target_type": "ip",
+    "risk_level": "Low",
+    "scanned_at": "2026-10-28T19:04:40.831920+00:00",
+    "dns": {
+      "records_by_type": {},
+      "all_records": [],
+      "resolved_ips": [
+        "1.1.1.1"
+      ],
+      "dnssec_enabled": false
+    },
+    "rdap": {
+      "handle": "1.1.1.0 - 1.1.1.255",
+      "registrar": "APNIC Research and Development",
+      "status": [
+        "active"
+      ],
+      "registration_date": "2011-08-10T23:12:35Z",
+      "expiration_date": null,
+      "last_changed": "2023-04-26T22:57:58Z",
+      "nameservers": [],
+      "raw_status": 200
+    },
+    "ip_intel": {
+      "1.1.1.1": {
+        "ip": "1.1.1.1",
+        "asn": "AS13335",
+        "as_org": "Apnic Research And Development",
+        "country": "Australia",
+        "country_code": "AU",
+        "city": "Brisbane",
+        "region": "Queensland",
+        "isp": "Cloudflare, Inc.",
+        "latitude": -27.4679371,
+        "longitude": 153.0280882
+      }
+    },
+    "certificates": [],
+    "subdomains": [],
+    "threat_intel": {
+      "threat_detected": false,
+      "details": {},
+      "findings": []
+    },
+    "findings": [],
+    "graph": {
+      "nodes": [
+        {
+          "data": {
+            "id": "target:1.1.1.1",
+            "label": "1.1.1.1",
+            "type": "IP",
+            "category": "Target",
+            "detail": "Root Target (IP)"
+          }
+        },
+        {
+          "data": {
+            "id": "ip:1.1.1.1",
+            "label": "1.1.1.1",
+            "type": "IP",
+            "category": "Infrastructure",
+            "detail": "IP: 1.1.1.1 | Cloudflare, Inc. | Australia",
+            "asn": "AS13335",
+            "country": "Australia"
+          }
+        },
+        {
+          "data": {
+            "id": "asn:AS13335",
+            "label": "ASN AS13335",
+            "type": "ASN",
+            "category": "Network",
+            "detail": "Apnic Research And Development"
+          }
+        }
+      ],
+      "edges": [
+        {
+          "data": {
+            "id": "target:1.1.1.1->ip:1.1.1.1:resolves_to",
+            "source": "target:1.1.1.1",
+            "target": "ip:1.1.1.1",
+            "label": "resolves_to"
+          }
+        },
+        {
+          "data": {
+            "id": "ip:1.1.1.1->asn:AS13335:announced_by",
+            "source": "ip:1.1.1.1",
+            "target": "asn:AS13335",
+            "label": "announced_by"
+          }
+        }
+      ],
+      "summary": {
+        "total_nodes": 3,
+        "total_edges": 2,
+        "domains": 0,
+        "ips": 2,
+        "subdomains": 0,
+        "certificates": 0,
+        "findings": 0
+      }
+    },
+    "id": "scan_ebd1f120d6d7",
+    "created_at": "2026-10-28T19:04:40.832925+00:00"
+  },
+  {
+    "target": "test.com",
+    "target_type": "domain",
+    "risk_level": "Low",
+    "scanned_at": "2026-01-01T00:00:00Z",
+    "findings": [],
+    "subdomains": [],
+    "dns": {
+      "resolved_ips": []
+    },
+    "graph": {
+      "nodes": [
+        {
+          "data": {
+            "id": "target:test.com",
+            "label": "test.com",
+            "type": "Domain",
+            "category": "Target",
+            "detail": "Root Target (DOMAIN)"
+          }
+        }
+      ],
+      "edges": [],
+      "summary": {
+        "total_nodes": 1,
+        "total_edges": 0,
+        "domains": 1,
+        "ips": 0,
+        "subdomains": 0,
+        "certificates": 0,
+        "findings": 0
+      }
+    },
+    "id": "scan_d1aa34eac1ee",
+    "created_at": "2026-10-28T18:57:27.236099+00:00"
+  }
+]

@@ -3,6 +3,7 @@ import { AnimatePresence } from 'framer-motion';
 import LandingPage from './pages/LandingPage';
 import AuthPage from './pages/AuthPage';
 import DashboardPage from './pages/DashboardPage';
+import DomainAnalysisPage from './pages/DomainAnalysisPage';
 import FaceScanPage from './pages/FaceScanPage';
 import UsernameDiscoveryPage from './pages/UsernameDiscoveryPage';
 import ScrapeAggregationPage from './pages/ScrapeAggregationPage';
@@ -38,6 +39,7 @@ export default function App() {
           <Route path="/app" element={<AppLayout />}>
             <Route index element={<Navigate to="/app/overview" replace />} />
             <Route path="overview" element={<DashboardPage />} />
+            <Route path="domain-intel" element={<DomainAnalysisPage />} />
             <Route path="face-scan" element={<FaceScanPage />} />
             <Route path="fake-detection" element={<FaceScanPage fakeMode />} />
             <Route path="username-scan" element={<UsernameDiscoveryPage />} />

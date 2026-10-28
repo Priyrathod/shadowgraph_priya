@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "name": "Elena Rostova",
+    "platform": "LinkedIn",
+    "profile_url": "https://linkedin.com/in/elenarostova",
+    "image": "elena_rostova.jpg"
+  },
+  {
+    "name": "Marcus Vance",
+    "platform": "GitHub",
+    "profile_url": "https://github.com/marcusvance",
+    "image": "marcus_vance.jpg"
+  },
+  {
+    "name": "Mei Ling",
+    "platform": "LinkedIn",
+    "profile_url": "https://linkedin.com/in/meiling",
+    "image": "mei_ling.jpg"
+  }
+]
